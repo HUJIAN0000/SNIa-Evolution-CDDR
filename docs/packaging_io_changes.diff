@@ -1,0 +1,69 @@
+--- source/matching.py
++++ release/matching.py
+@@ -19,7 +19,8 @@
+ 
+ 
+ ROOT=Path(__file__).resolve().parents[1]
+-RAW=ROOT/'data' if (ROOT/'data').is_dir() else ROOT.parent/'data_and_tools'
++RAW=ROOT/'data'
++from prepare_data import ensure_inputs
+ ANA=ROOT/'analysis'
+ LM0=11.03
+ K=5/np.log(10)
+@@ -37,6 +38,8 @@
+     return np.array([quad(inv_e,0,float(v),epsabs=1e-11)[0] for v in np.atleast_1d(z)])
+ 
+ def inputs():
++    ensure_inputs(RAW)
++    (ROOT/'audit').mkdir(exist_ok=True,parents=True)
+     sn=pd.read_csv(RAW/'Pantheon+SH0ES.dat',sep=r'\s+',dtype={'CID':str})
+     crs=pd.read_csv(RAW/'ucsdata.CSV')
+     cov=cm.load_matrix(RAW/'Pantheon+SH0ES_STAT+SYS.cov',len(sn))
+
+--- source/make_review_figures.py
++++ release/make_review_figures.py
+@@ -18,7 +18,7 @@
+ 
+ def finish(fig,name):
+     fig.savefig(FIG/(name+'.pdf'));fig.savefig(FIG/(name+'.png'),dpi=160)
+-    shutil.copy2(FIG/(name+'.pdf'),MAN/(name+'.pdf'));plt.close(fig)
++    plt.close(fig)
+ 
+ def main():
+     sn,_,C=inputs();idx=np.flatnonzero(sn.zHD.to_numpy()>=.3)
+
+--- source/recalculate_baseline_mcmc.py
++++ release/recalculate_baseline_mcmc.py
+@@ -16,6 +16,9 @@
+ from scipy.stats import norm,rankdata
+ 
+ ROOT=Path(__file__).resolve().parents[1]
++from prepare_data import ensure_inputs
++ensure_inputs(ROOT/'data')
++(ROOT/'audit').mkdir(exist_ok=True,parents=True)
+ OUT=ROOT/'analysis/baseline_mcmc';OUT.mkdir(exist_ok=True,parents=True);PAIR=OUT/'pairing';PAIR.mkdir(exist_ok=True)
+ def module(name,path):
+     spec=importlib.util.spec_from_file_location(name,path)
+
+--- plot_results.py
++++ plot_baseline.py
+@@ -11,7 +11,7 @@
+ import cosmo_tools
+ import mcmc_sn_evolutionv5m_error10 as model
+ 
+-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'figures';ANA=ROOT/'analysis'
++ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'figures';ANA=ROOT/'baseline'
+ results=json.loads((ANA/'results.json').read_text())
+ t=pd.read_csv(ANA/'pairing/matched_cluster_milp_dd_pantheon.csv')
+ C=np.loadtxt(ANA/'pairing/cov_cluster_milp_dd_pantheon_lens.txt')
+@@ -28,7 +28,9 @@
+         stats_list=cosmo_tools.calculate_stats(samples,labels),filename=str(filename),
+         contour_color='#00529B',ranges=ranges)
+     plt.close('all')
+-    subprocess.run(['pdftoppm','-r','100','-png','-singlefile',str(filename),str(filename.with_suffix(''))],check=True)
++    import pymupdf
++    with pymupdf.open(filename) as pdf:
++        pdf[0].get_pixmap(matrix=pymupdf.Matrix(1.5,1.5)).save(filename.with_suffix('.png'))
+     like=model.SNEvolutionLikelihood(t.z,t.theta,t.dtheta,t.sn_matched_m_b_corr,C,fit_mode=mode,extra_fraction=.1)
+     theta=np.array(r['mle']);MB,e1,e2,eta,lm=like._unpack(theta)
+     pred=like.model_mu_predicted(theta)+MB+e1*like.z+e2*np.log1p(like.z)

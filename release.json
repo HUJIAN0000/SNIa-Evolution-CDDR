@@ -1,0 +1,13 @@
+{
+  "software_title": "AAS76998 supernova-radio-source reproducibility pipeline",
+  "package_version": "2026.10.24",
+  "manuscript_identifier": "AAS76998",
+  "repository": "https://github.com/HUJIAN0000/SNIa-Evolution-CDDR",
+  "raw_input_files": 3,
+  "supplemental_fit_products": 42,
+  "main_MILP_pairs": 50,
+  "historical_pairs": 48,
+  "strict_pairs": 27,
+  "scope": "Exact scientific source snapshots plus documented portable I/O wrappers; no manuscript or editorial correspondence",
+  "license_note": "Existing analysis-repository MIT text retained; vendor/data rights are documented separately in THIRD_PARTY.md"
+}

@@ -1,0 +1,14 @@
+{
+  "shape": [
+    1701,
+    1701
+  ],
+  "symmetric": true,
+  "psd_checked": true,
+  "minimum_eigenvalue_if_needed": null,
+  "asymmetry_max_abs": 3.0000000000038676e-08,
+  "asymmetry_relative_to_matrix_max": 7.671984801296533e-08,
+  "symmetry_rtol": 1e-06,
+  "roundoff_symmetrized_for_validation": true,
+  "roundoff_correction_applied": true
+}

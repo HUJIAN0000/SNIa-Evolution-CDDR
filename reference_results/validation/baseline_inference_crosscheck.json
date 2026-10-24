@@ -1,0 +1,18 @@
+{
+  "evol": {
+    "maximum_quantile_change_as_68_width": 0.003474774353962675,
+    "same_chi2_difference": 2.2737367544323206e-13
+  },
+  "log_evol": {
+    "maximum_quantile_change_as_68_width": 0.006143497421206021,
+    "same_chi2_difference": 2.2737367544323206e-13
+  },
+  "ddr": {
+    "maximum_quantile_change_as_68_width": 0.0026369862126534994,
+    "same_chi2_difference": 6.033644694980467e-10
+  },
+  "joint": {
+    "maximum_quantile_change_as_68_width": 0.0256585707486356,
+    "same_chi2_difference": 1.1937117960769683e-12
+  }
+}

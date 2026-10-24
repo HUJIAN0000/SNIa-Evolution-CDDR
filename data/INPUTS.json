@@ -1,0 +1,23 @@
+{
+  "Pantheon+SH0ES.dat": {
+    "sha256": "1cb0fc379ef066afdc2ffd1857681cc478024570d8a3eba284fb645775198cf8",
+    "bytes": 579283,
+    "stored_as": "Pantheon+SH0ES.dat",
+    "stored_sha256": "1cb0fc379ef066afdc2ffd1857681cc478024570d8a3eba284fb645775198cf8",
+    "compression": null
+  },
+  "Pantheon+SH0ES_STAT+SYS.cov": {
+    "sha256": "abf806d966485e64afdb359c87bffc0ecc00d05eff0a31ced66f247385df0fdc",
+    "bytes": 33284960,
+    "stored_as": "Pantheon+SH0ES_STAT+SYS.cov.gz",
+    "stored_sha256": "fc70175f908653374f30b91ac12b16dea946295ea364afd4baef258c63b7248f",
+    "compression": "gzip, lossless"
+  },
+  "ucsdata.CSV": {
+    "sha256": "e1482f7f482e4f369749f588fc52313158bd7e65024f0494213482ddd4d29189",
+    "bytes": 4839,
+    "stored_as": "ucsdata.CSV",
+    "stored_sha256": "e1482f7f482e4f369749f588fc52313158bd7e65024f0494213482ddd4d29189",
+    "compression": null
+  }
+}

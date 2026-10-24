@@ -1,0 +1,26 @@
+{
+  "pairs": 48,
+  "same_pair_order": true,
+  "covariance_exactly_equal": true,
+  "error_formula": "sigma_theta_eff^2 = dtheta^2 + (0.10 theta)^2",
+  "mu_extra_sigma_mag": 0.21714724095162588,
+  "baseline_identity": {
+    "evol": {
+      "points": 309,
+      "max_log_probability_difference": 0.0
+    },
+    "log_evol": {
+      "points": 294,
+      "max_log_probability_difference": 0.0
+    },
+    "ddr": {
+      "points": 294,
+      "max_log_probability_difference": 0.0
+    },
+    "joint": {
+      "points": 120,
+      "max_log_probability_difference": 0.0
+    }
+  },
+  "covariance_formula_max_difference": 3.552713678800501e-15
+}
