@@ -8,12 +8,12 @@
     "sha256": "11ef126592be531cf868720f01b8e1a7379c45a8420b7b9224c1b0b8bffae9ad"
   },
   "baseline/pairing/cov_cluster_milp_dd_pantheon_lens.txt": {
-    "bytes": 35356,
-    "sha256": "79cdae50f9c91bf46ffa8cc9172f7159884c5dd2a6309da5ed377345fe3ef134"
+    "bytes": 35308,
+    "sha256": "2970cd5c98752081cd209a841242abe9e440e791a34466c25a9577a8d4db6978"
   },
   "baseline/pairing/matched_cluster_milp_dd_pantheon.csv": {
-    "bytes": 5778,
-    "sha256": "8f99564f21ecba592bea260aafc964774d17e5d5bc86694f78c6c94b9d7277da"
+    "bytes": 5729,
+    "sha256": "feec3ef7e06f20b44bcd574407e55acbe550feb550f4f632e35e2532439a5d1a"
   },
   "baseline/posterior_ddr.npy": {
     "bytes": 2688128,
@@ -32,8 +32,8 @@
     "sha256": "e36bce652c741655cc47009cd376e58b47285da247e657fcef18721d39593917"
   },
   "baseline/results.json": {
-    "bytes": 11581,
-    "sha256": "2d2898ad0bc5a5ffffa47b5044f9cee1495b0079ee2e0e047394cc146a918281"
+    "bytes": 11115,
+    "sha256": "cb96b863900df11c54e40226383ddc5d1f221f0387a0408a81bee2864abff8ba"
   },
   "code/bounded_inference.py": {
     "bytes": 6674,
@@ -56,28 +56,28 @@
     "sha256": "a4b86cfb55b72ebe71e7a3c11c01fcdf81ddd7efc823dabcb6b92212b1e689b6"
   },
   "code/make_review_figures.py": {
-    "bytes": 4943,
-    "sha256": "3a480b0ea3c4163369606cfc63664e83fecd22f956b284432bc9f5396995a2c7"
+    "bytes": 4873,
+    "sha256": "dcba6b86a00a62f4b218ababf8e0cdc9f88a42d5febb8a8c5cebc8a16bf31630"
   },
   "code/matching.py": {
-    "bytes": 5107,
-    "sha256": "406ff889ba5114ef96924f9a6ba2ddbe11bc9e214afca71221759175313649c4"
+    "bytes": 5008,
+    "sha256": "d9e8805b4cbce1b976043f6e48f604e3d78b168d375fe59abbaf52dd6a2b001e"
   },
   "code/mcmc_sn_evolutionv5m_error10.py": {
-    "bytes": 13976,
-    "sha256": "49d829b2856e25f96a828c509a36ace969015b68ddb2b90d8ae07d807d33188d"
+    "bytes": 13646,
+    "sha256": "e1bbbfd6834913c6fabdeebba54d4371e1382d2e7211faae77ea47fdb25cef98"
   },
   "code/plot_baseline.py": {
-    "bytes": 2783,
-    "sha256": "d13a26c621dd18106970b87f8efacb4a47d0ca8a68cf9e735f7654d3c11a0bde"
+    "bytes": 2736,
+    "sha256": "86aa9b1627cc3f48fb914d91a64f22fa7a4055c4db498be40cc0e685b9570d5a"
   },
   "code/prepare_data.py": {
     "bytes": 1544,
     "sha256": "9e7b10aa2586146888222045c7f3dc3c60a655fe1c21ddc7a10a196321de757a"
   },
   "code/recalculate_baseline_mcmc.py": {
-    "bytes": 9526,
-    "sha256": "23f7c0f82352e95745d4337b3e2b1131aaace43e904cf752f1a7ab24ce8f02a7"
+    "bytes": 9374,
+    "sha256": "91b26dde88266721f828d679039319e66a1545bc3f1962ba46fa079cd27a943b"
   },
   "code/refine_baseline_joint.py": {
     "bytes": 4521,
@@ -96,8 +96,8 @@
     "sha256": "9f7f3d233f8b7f17571c1ec7e2389e51407a4d5e60728952bb84bb756d41c956"
   },
   "code/vendor/LICENSING_STATUS.upstream.md": {
-    "bytes": 600,
-    "sha256": "426526b8ba4d1a00f5cbf0d54c5993f8a0612ddbd28cee20cf7694b5eef4c55d"
+    "bytes": 595,
+    "sha256": "0039dc30b401f8262b0488777812f9eb36120ee99318e34c8e91935d4c91a225"
   },
   "code/verify_baseline_integrals.py": {
     "bytes": 3935,
@@ -108,8 +108,8 @@
     "sha256": "46c4fa5461644683f70582e90ebcd06099217c04e4d37c9dd4a143cdc6ca86d1"
   },
   "data/INPUTS.json": {
-    "bytes": 901,
-    "sha256": "2239ab47139f558879f8099eb9c0ef4f68a16671a66a8f918701900dad2702cf"
+    "bytes": 879,
+    "sha256": "b3c0b8eb47f11f8454bec2f3295cba028d3571a1c83e6df9a08fe3d833851444"
   },
   "data/Pantheon+SH0ES.dat": {
     "bytes": 579283,
@@ -132,8 +132,8 @@
     "sha256": "d776f5de93df7dfb22416c7b6826e04765d5facd2719294bf26c2b02e96fbd4b"
   },
   "docs/packaging_io_changes.diff": {
-    "bytes": 2791,
-    "sha256": "32155674ea377e0cef1bfb684592894b962fa74b2897bff52f93da3d78f6196d"
+    "bytes": 2722,
+    "sha256": "8774fd06af8180ffbe10280cb55f436bdf49669db46a0dd9afa6846428d9081c"
   },
   "docs/RESULTS_MAP.md": {
     "bytes": 3890,
@@ -164,16 +164,16 @@
     "sha256": "f1430d72a2fad951d1b6deae8d1f7d6a91f4bade10745ee769ea7e7919bd0b5a"
   },
   "original/cov_cluster_milp_dd_pantheon_lens.txt": {
-    "bytes": 35356,
-    "sha256": "79cdae50f9c91bf46ffa8cc9172f7159884c5dd2a6309da5ed377345fe3ef134"
+    "bytes": 35308,
+    "sha256": "2970cd5c98752081cd209a841242abe9e440e791a34466c25a9577a8d4db6978"
   },
   "original/matched_cluster_milp_dd_pantheon.csv": {
-    "bytes": 6546,
-    "sha256": "0ff67dc9f2cde25fe4030791d2e0d3613382d686b6e4e18c001aa26bbb32dc44"
+    "bytes": 6497,
+    "sha256": "cc726d105c907916c739664a47801885922b7433f105895adc22a445fd175755"
   },
   "original/mcmc_sn_evolutionv5m.py": {
-    "bytes": 13441,
-    "sha256": "8b675fc0be1cd1c42795b4a8850e9e986dc9409ae24c03c60f1382b31ecbb044"
+    "bytes": 13119,
+    "sha256": "3decff55ff0379c3f44c4b55a72212e69129afd9887ccb5274d485a5d48e98e3"
   },
   "original/sn_evolution_v4_chain_ddr.npy": {
     "bytes": 288896,
@@ -880,8 +880,8 @@
     "sha256": "ad951e2ef9cd99b1b167b189fa8ffb3db80cec08c66c345b70b561a5aa8497bb"
   },
   "reference_results/validation/baseline_inference_crosscheck.json": {
-    "bytes": 553,
-    "sha256": "b987d5e6445cdba105ce6ea3c603b42c3eeabab4b94107183460d667e067d5a9"
+    "bytes": 536,
+    "sha256": "abf8a15e922ffa996b17ed78d70289777d53dddefd93e584a97301b6a52ce39c"
   },
   "reference_results/validation/baseline_mcmc_input_checks.json": {
     "bytes": 657,
@@ -892,12 +892,12 @@
     "sha256": "f17b2acbdb72bc88c468759a06117644c9424387739ec31dbcdfdab782b4a06b"
   },
   "reference_results/validation/independent_cardinality.json": {
-    "bytes": 55,
-    "sha256": "fb675e2f1972de2eb9908df6479fcb0dc2991a51b7df666729f5509700228f78"
+    "bytes": 52,
+    "sha256": "06ba921293a87d03605bdefcb61f14a0c0aee4708fe573b7f60b0029062506e9"
   },
   "reference_results/validation/previous_error_correction_checks.json": {
-    "bytes": 657,
-    "sha256": "e6b0ba506cd9b8f13b8d96cca6304c7998d3088dd3f098092d00c804b5e9a010"
+    "bytes": 632,
+    "sha256": "99d7a8574d2823e37d214328c62bbd130f83c20d59c87e9d7fbb3650192da56a"
   },
   "reference_results/validation/previous_first_draft_reproduction.json": {
     "bytes": 6514,
@@ -912,8 +912,8 @@
     "sha256": "3fb646ecdae158781a36496093900199db77b956b3d75b970dc6b8c41619cadb"
   },
   "requirements-tested.txt": {
-    "bytes": 157,
-    "sha256": "86522256b0bb4ce185aaa9d6e914f4f5e18866f32b80831c1bfae91dd25cdbfe"
+    "bytes": 147,
+    "sha256": "ade7bd26addd073d25bd5b8fb09a08564c0f4f4e4cc83c9097532a21c1c1e3ea"
   },
   "requirements.txt": {
     "bytes": 112,
