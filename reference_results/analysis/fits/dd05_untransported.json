@@ -1,0 +1,60 @@
+{
+  "tag": "dd05_untransported",
+  "n": 50,
+  "evolution": "linear",
+  "cddr": "none",
+  "quantiles": {
+    "M_B0": [
+      -19.345683119218194,
+      -19.20544906329982,
+      -19.065182932076116
+    ],
+    "epsilon": [
+      -0.1117986819319756,
+      0.01464481125978788,
+      0.14186995596646496
+    ],
+    "eta0": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "lm_pc": [
+      10.78093519675828,
+      11.029825099559492,
+      11.280831155449873
+    ]
+  },
+  "eta_integral_quantiles": null,
+  "chi2": 128.51805962210994,
+  "nominal_dof": 48,
+  "chi2_over_dof": 2.677459575460624,
+  "profile_eta_mle": 0.0,
+  "profile_coefficients": [
+    -19.205861318470724,
+    0.015009755543076153
+  ],
+  "integration_refinement_max_eta_change": 0.0,
+  "iid_sample_eta_quantile_check_fraction": 0.0,
+  "nsamples": 100000,
+  "seed": 20261026,
+  "acceptance": 1.0,
+  "priors": {
+    "M_B0": [
+      -21,
+      -18
+    ],
+    "epsilon": [
+      -5,
+      5
+    ],
+    "eta0": [
+      -2,
+      2.0
+    ],
+    "positivity": "eta(z)>0 at all fitted anchors",
+    "lm_pc": "Normal(11.03,.25), 5<lm<20"
+  },
+  "method": "bounded Gaussian integration plus independent rejection samples; fixed covariance, no free scatter",
+  "physical_precision_validated": false
+}

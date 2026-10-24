@@ -12,3 +12,9 @@ The portable package makes four small changes to existing script input/output ha
 The exact source diffs are in `packaging_io_changes.diff`. New entry-point, decompression, historical-replay and verification scripts handle packaging and execution only. They do not change the matching objective, GP equations, likelihood, error prescription or parameter priors.
 
 The paper and response generators are left in the manuscript workspace because numerical reproduction does not depend on them. This release therefore does not propagate the recently identified prose-level AIC/BIC, tension or public-availability claims into a regenerated paper.
+
+## Git transport correction
+
+The initial package used unanchored `analysis/` and `figures/` ignore rules. These also excluded the 167 frozen files under the same directory names inside `reference_results/`. The corrected rules ignore only root-level generated directories and explicitly retain the frozen reference tree.
+
+The added `.gitattributes` disables line-ending conversion. This preserves the exact input and source bytes covered by the existing checksums rather than changing the data to accommodate Git defaults. Packaging validation now stages every release file through Git with Windows-style automatic line-ending conversion enabled, then checks the staged blobs against the package hashes. No scientific code, input value, posterior or figure is changed by this correction.

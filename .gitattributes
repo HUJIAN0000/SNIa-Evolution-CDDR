@@ -1,0 +1,3 @@
+# Preserve the exact bytes recorded in PACKAGE_SHA256.json and data/INPUTS.json.
+# In particular, do not convert the supplied text catalogs between CRLF and LF.
+* -text

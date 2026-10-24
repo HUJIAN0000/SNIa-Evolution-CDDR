@@ -1,13 +1,17 @@
 __pycache__/
 *.py[cod]
-.venv/
+/.venv/
 .DS_Store
-_runs/
-logs/
-audit/
-analysis/
-figures/
-data/Pantheon+SH0ES_STAT+SYS.cov
+/_runs/
+/logs/
+/audit/
+/analysis/
+/figures/
+/data/Pantheon+SH0ES_STAT+SYS.cov
 *.partial_*
-*.zip
-*.sha256
+/*.zip
+/*.sha256
+
+# Frozen reference products must be committed, even if user-wide rules overlap.
+!/reference_results/
+!/reference_results/**

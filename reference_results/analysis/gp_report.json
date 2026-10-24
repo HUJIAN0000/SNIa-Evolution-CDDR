@@ -1,0 +1,84 @@
+{
+  "gp_matern": {
+    "training_n": 494,
+    "anchor_n": 48,
+    "training_z_range": [
+      0.3002,
+      2.26137
+    ],
+    "hyperparameters": [
+      0.4044025294267717,
+      2.0715793673064398
+    ],
+    "mean_degree": 1,
+    "kernel": "matern52",
+    "optimizer_success": true,
+    "grouped_fivefold": [
+      {
+        "fold": 0,
+        "n": 99,
+        "rmse_mag": 0.15480292569658977,
+        "chi2_over_N": 0.7217685710448621,
+        "marginal95_coverage": 0.9696969696969697
+      },
+      {
+        "fold": 1,
+        "n": 99,
+        "rmse_mag": 0.14231560457540285,
+        "chi2_over_N": 0.8074384950689797,
+        "marginal95_coverage": 0.9595959595959596
+      },
+      {
+        "fold": 2,
+        "n": 99,
+        "rmse_mag": 0.14715012748522519,
+        "chi2_over_N": 0.8341390979557158,
+        "marginal95_coverage": 0.9595959595959596
+      },
+      {
+        "fold": 3,
+        "n": 99,
+        "rmse_mag": 0.1349625226175098,
+        "chi2_over_N": 0.6564967892126634,
+        "marginal95_coverage": 0.98989898989899
+      },
+      {
+        "fold": 4,
+        "n": 98,
+        "rmse_mag": 0.14929417292649613,
+        "chi2_over_N": 0.8769887483481923,
+        "marginal95_coverage": 0.9693877551020408
+      }
+    ]
+  },
+  "gp_rbf": {
+    "training_n": 494,
+    "anchor_n": 48,
+    "training_z_range": [
+      0.3002,
+      2.26137
+    ],
+    "hyperparameters": [
+      0.1939597405781848,
+      0.944087943201385
+    ],
+    "mean_degree": 1,
+    "kernel": "rbf",
+    "optimizer_success": true
+  },
+  "gp_quadratic": {
+    "training_n": 494,
+    "anchor_n": 48,
+    "training_z_range": [
+      0.3002,
+      2.26137
+    ],
+    "hyperparameters": [
+      2.772053635808733,
+      4.999999999999999
+    ],
+    "mean_degree": 2,
+    "kernel": "matern52",
+    "optimizer_success": true
+  }
+}

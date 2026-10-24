@@ -1,0 +1,51 @@
+{
+  "tag": "gp_scatter05",
+  "n": 48,
+  "half_normal_scale_mag": 0.5,
+  "s_support_mag": [
+    0,
+    2
+  ],
+  "quantiles_025_16_50_84_975": {
+    "M_B0": [
+      -19.71272979520714,
+      -19.474112857835234,
+      -19.232540406929296,
+      -18.994237841056798,
+      -18.754126995469306
+    ],
+    "epsilon": [
+      -0.43883685118070836,
+      -0.2193416280979924,
+      -0.005104544926604506,
+      0.20808386437373075,
+      0.41838505973562495
+    ],
+    "scatter_mag": [
+      0.37228326786881144,
+      0.43389282631422355,
+      0.506737063349489,
+      0.5906192975750143,
+      0.6855789549256219
+    ],
+    "lm_pc": [
+      10.539074771333043,
+      10.780460114099185,
+      11.030187302723391,
+      11.278958395413921,
+      11.518706964315232
+    ]
+  },
+  "scatter_integral_quantiles": [
+    0.4341568345646838,
+    0.5070765697851406,
+    0.5912631882739278
+  ],
+  "s_grid_refinement_maxchange": 1.6204381055873185e-06,
+  "scatter_mle_mag": 0.491,
+  "chi2_at_mle": 55.834042020869404,
+  "nominal_dof": 45,
+  "covariance": "C_fixed10+s^2 I; determinant included",
+  "physical_priors": "same bounded MB/epsilon and Gaussian lm as baseline",
+  "interpretation": "empirical sensitivity only; not a validated physical error model or a redshift-bias correction"
+}

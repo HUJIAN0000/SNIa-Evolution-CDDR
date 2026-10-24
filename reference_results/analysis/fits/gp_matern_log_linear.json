@@ -1,0 +1,64 @@
+{
+  "tag": "gp_matern_log_linear",
+  "n": 48,
+  "evolution": "log",
+  "cddr": "linear",
+  "quantiles": {
+    "M_B0": [
+      -19.741975712283363,
+      -19.464499135266028,
+      -19.200881013676632
+    ],
+    "epsilon": [
+      -2.578290951926319,
+      -1.7072447538571405,
+      1.6655605200281143
+    ],
+    "eta0": [
+      -0.2382430113110762,
+      0.7775730587333725,
+      1.710801984264694
+    ],
+    "lm_pc": [
+      10.78018640041619,
+      11.029325360118413,
+      11.280751286822968
+    ]
+  },
+  "eta_integral_quantiles": [
+    -0.2371926200329462,
+    0.7856258447011835,
+    1.7126637030860934
+  ],
+  "chi2": 183.30317850794083,
+  "nominal_dof": 45,
+  "chi2_over_dof": 4.07340396684313,
+  "profile_eta_mle": 2.0,
+  "profile_coefficients": [
+    -19.629506229489095,
+    -2.7334084319024328
+  ],
+  "integration_refinement_max_eta_change": 1.305153008640536e-06,
+  "iid_sample_eta_quantile_check_fraction": 0.004129938125353547,
+  "nsamples": 100000,
+  "seed": 20261026,
+  "acceptance": 1.0,
+  "priors": {
+    "M_B0": [
+      -21,
+      -18
+    ],
+    "epsilon": [
+      -5,
+      5
+    ],
+    "eta0": [
+      -2,
+      2.0
+    ],
+    "positivity": "eta(z)>0 at all fitted anchors",
+    "lm_pc": "Normal(11.03,.25), 5<lm<20"
+  },
+  "method": "bounded Gaussian integration plus independent rejection samples; fixed covariance, no free scatter",
+  "physical_precision_validated": false
+}

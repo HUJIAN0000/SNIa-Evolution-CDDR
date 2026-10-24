@@ -4,7 +4,7 @@
 
 ## 上传哪些文件
 
-本目录的代码、数据、参考结果、文档和校验清单都要上传，包括根目录 README、LICENSE、requirements、`reproduce.py`、`verify_package.py`、`.gitignore`，以及 `code/`、`data/`、`baseline/`、`original/`、`reference_results/`、`docs/`。
+本目录的代码、数据、参考结果、文档和校验清单都要上传，包括根目录 README、LICENSE、requirements、`reproduce.py`、`verify_package.py`、`.gitignore`、`.gitattributes`，以及 `code/`、`data/`、`baseline/`、`original/`、`reference_results/`、`docs/`。
 
 不要把运行后产生的 `_runs/`、解压生成的 33 MB `.cov`、本地日志、其他论文工程或私人审稿资料加进来；`.gitignore` 已列出运行产物。
 
@@ -18,6 +18,16 @@
 4. 在科学环境运行 `python verify_package.py`，再运行 `python reproduce.py --check`。
 5. 用 GitHub Desktop 或 Git 提交并推送到你的仓库。使用网页上传时，可分批上传各个文件夹；保持 `.gitignore` 等根文件也在。
 6. 打开仓库网页，核对能看到新的 README、`reproduce.py`、`code/gp.py`、`code/bounded_inference.py`、`code/scatter_sensitivity.py`、三个输入文件及参考结果目录。
+
+## 2026-10-24 上传规则修正
+
+旧包的 `analysis/` 和 `figures/` 忽略规则没有以 `/` 开头，会误忽略任意层级的同名目录，导致 `reference_results/analysis/` 的 161 个文件和 `reference_results/figures/` 的 6 个文件不进入 Git。修订包改为只忽略根目录运行产物，并明确保留全部 `reference_results/`。
+
+同时加入 `.gitattributes`，关闭 Git 自动换行转换，保留校验清单记录的原始字节。先前在线版本有 25 个文件仅因 CRLF/LF 转换而改变哈希，没有发现这些文件的非换行内容变化。
+
+若已经推送过旧包，把修订目录内容重新复制覆盖到 GitHub Desktop 的仓库工作目录，保留隐藏的 `.gitignore` 和 `.gitattributes`，然后重新提交并推送。Changes 应出现这 167 个参考文件，另有换行恢复及规则/清单更新。无需删除旧提交或强制推送。
+
+只在本地执行验证不足以证明文件已进入 Git。推送前还应检查 `reference_results/analysis/` 和 `reference_results/figures/` 已列在提交内容中；推送后再核对在线版本。
 
 GitHub 网页上传的单文件上限是 25 MiB。本包每个应上传文件均低于此限制；外层总 ZIP 可能大于该限制，所以应先解压再上传目录。[GitHub 官方说明](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)
 

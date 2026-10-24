@@ -1,0 +1,51 @@
+{
+  "tag": "historical_scatter025",
+  "n": 48,
+  "half_normal_scale_mag": 0.25,
+  "s_support_mag": [
+    0,
+    2
+  ],
+  "quantiles_025_16_50_84_975": {
+    "M_B0": [
+      -19.74069175825402,
+      -19.49876762554377,
+      -19.252250987022535,
+      -19.008196960681683,
+      -18.76213142061668
+    ],
+    "epsilon": [
+      -0.42997248753919665,
+      -0.20534588149505528,
+      0.015131502486784059,
+      0.23380743269182147,
+      0.44857097165001053
+    ],
+    "scatter_mag": [
+      0.3446647288141986,
+      0.410288586652741,
+      0.4844720461051109,
+      0.5662637173392211,
+      0.6548745811382842
+    ],
+    "lm_pc": [
+      10.539074771333043,
+      10.780468821690283,
+      11.030187302723391,
+      11.278958395413921,
+      11.518706964315232
+    ]
+  },
+  "scatter_integral_quantiles": [
+    0.41056279902854065,
+    0.4848101347371192,
+    0.566875637043056
+  ],
+  "s_grid_refinement_maxchange": 2.1899370029054843e-06,
+  "scatter_mle_mag": 0.5135,
+  "chi2_at_mle": 55.32396007136618,
+  "nominal_dof": 45,
+  "covariance": "C_fixed10+s^2 I; determinant included",
+  "physical_priors": "same bounded MB/epsilon and Gaussian lm as baseline",
+  "interpretation": "empirical sensitivity only; not a validated physical error model or a redshift-bias correction"
+}

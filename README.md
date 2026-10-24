@@ -29,6 +29,8 @@ The first command uses the standard library to check file hashes, compressed-inp
 
 The large Pantheon+ covariance is supplied as `data/Pantheon+SH0ES_STAT+SYS.cov.gz`. The code restores it automatically, then verifies the uncompressed SHA-256. Gzip changes the storage size, not the matrix values, text encoding or row order. The restored `.cov` file is ignored by Git.
 
+Keep `.gitattributes` when copying this package into a repository: it disables Git line-ending conversion so the recorded byte hashes remain valid. The ignore rules apply to generated directories at the repository root; all frozen files under `reference_results/` must be committed.
+
 ## Recompute results
 
 ```bash

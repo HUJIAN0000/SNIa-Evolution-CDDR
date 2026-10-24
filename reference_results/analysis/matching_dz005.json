@@ -1,0 +1,54 @@
+{
+  "maximum_cardinality": 27,
+  "secondary_cost": 0.00013329979999999688,
+  "stages": [
+    {
+      "name": "maximum_cardinality",
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00943570000163163,
+      "mip_gap": 0.0,
+      "dual_bound": -27.0,
+      "objective": -27.0
+    },
+    {
+      "name": "minimum_mismatch",
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0046588000004703645,
+      "mip_gap": 0.0,
+      "dual_bound": 5.418338644640951,
+      "objective": 5.418338644640951
+    }
+  ],
+  "optimal": true,
+  "canonicalization": {
+    "rule": "catalogue_order",
+    "cost_tolerance": 1e-12,
+    "steps": 31,
+    "seconds": 0.07940640000015264,
+    "second_stage_cost": 0.00013329979999999688,
+    "cost_change": 0.0
+  },
+  "tag": "dz005",
+  "n": 27,
+  "unique_by": "CID",
+  "criterion": "dz",
+  "tolerance": 0.005,
+  "om": 0.3,
+  "w0": -1.0,
+  "wa": 0.0,
+  "candidates": 96,
+  "z_range": [
+    0.462,
+    1.417
+  ],
+  "sn_z_range": [
+    0.46164,
+    1.41633
+  ],
+  "median_abs_dz": 0.0012600000000000389,
+  "max_abs_dz": 0.004899999999999904,
+  "max_relative_dc": 0.005909184936887264,
+  "max_abs_transport": 0.019129408326888118
+}
